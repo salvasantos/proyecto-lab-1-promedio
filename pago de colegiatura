@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std; 
+
+
+int main()
+{
+  float descuento=0,colegiatura=500,total=0;
+  int promedio=0;
+  cout<<"\tBienvenido alumno\t"<<endl;
+    cout<<"Cual es su promedio : "<<endl;
+  cin>>promedio;
+  
+  if(promedio>=90)
+  {
+    descuento=0.15;
+  }
+  else
+  {
+    if(promedio>=80 && promedio <90)
+    {
+      descuento=0.1;
+    }
+    else
+    {
+      if(promedio>=60 && promedio <80)
+      {
+        descuento=0.05;
+      }
+      else
+      {
+        descuento=0;
+      }
+    }
+  }
+  total=colegiatura-(colegiatura*descuento);
+     cout<<"Tu colegiatura sera de\n"<< total<<endl;
+
+	
+
+}
